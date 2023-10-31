@@ -10,7 +10,7 @@ systemctl enable docker
 
 containerId=$(sudo docker run -d gitlab/gitlab-runner)
 
-$(docker exec -it $containerId /bin/bash)
+runtimeError=$(docker exec -it $containerId /bin/bash)
 
 apt update
 
