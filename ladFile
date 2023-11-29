@@ -4,6 +4,6 @@ do
 touch foo.bar
 echo "Hello $i"
 runAlgorithm=$(ladrun -np $i quicksortorbubblesortP 5000 100000 qsort)
-printf "$i" >> algorithmsText
-printf "$runAlgorithm" >> algorithmsText
+printf "$i" >> foo.bar
+printf "$runAlgorithm" >> foo.bar
 done
