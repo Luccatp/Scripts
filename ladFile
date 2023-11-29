@@ -1,8 +1,8 @@
 #!/bin/bash
-for i in 25 26 27 28 29 30 31 32
-do
 rm -f ./foo.bar
 touch foo.bar
+for i in 25 26 27 28 29 30 31 32
+do
 echo "Hello $i"
 runAlgorithm=$(ladrun -np $i quicksortorbubblesortP 5000 100000 qsort)
 printf "$i" >> foo.bar
