@@ -11,7 +11,7 @@ qsortResult=$(ladrun -np $i quicksortorbubblesortP 5000 100000 qsort)
 printf "run $i" >> qsortResults
 printf "$qsortResult" >> qsortResults
 
-qsortResult=$(ladrun -np $i quicksortorbubblesortP 5000 10000 bsort)
+bsortResult=$(ladrun -np $i quicksortorbubblesortP 5000 10000 bsort)
 printf "run $i" >> bsortResults
-printf "$qsortResult" >> bsortResults
+printf "$bsortResult" >> bsortResults
 done
